@@ -2,15 +2,14 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="custom.css">
     <title>Praktikum PABWE</title>
-    <link rel="stylesheet" href="custom.css" />
-    <link rel="stylesheet" href="layouts.css" />
 </head>
 <body>
     <div class="container">
         <header class="main-header clearfix">
-            <h1>&#128216;Contact Us</h1>
-
+            <h1>&#128216; Contact us</h1>
+            
             <nav>
                 <a href="index.html">Home</a>
                 <a href="blog.html">Blog</a>
@@ -19,47 +18,34 @@
                 <a href="login.html">Login</a>
             </nav>
         </header>
-
-        <main width="100%">
-            <form width="100%">
-                <table cellpadding="5" class="table-formulir" width="100%">
-                    <caption>
-                        <h2>Hubungi Kami</h2>
-                    </caption>
-                    <tr>
-                        <td><label for="name">Nama Lengkap</label></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input type="text" id="name" name="name" /></td>
-                    </tr>
-                    <tr>
-                        <td><label for="email">Alamat Email</label></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input type="email" id="email" name="email" /></td>
-                    </tr>
-                    <tr>
-                        <td><label for="kategori">Kategori</label></td>
-                    </tr>
-                    <tr>
-                        <td class="radio-option">
-                            <input type="radio" id="report" name="kategori" value="report" />
-                            <label for="report">Laporan</label>
-                            <input type="radio" id="feedback" name="kategori" value="feedback" />
-                            <label for="feedback">Masukkan</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="message">Pesan</label></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <textarea id="message" name="message" rows="5"></textarea>
-                        </td>
-                    </tr>
-                    <tr align="center">
-                        <td colspan="2">
-                            <input
+    
+        <main>
+            <form class="contact-us">
+                <h2>Hubungi Kami</h2>
+                <div class="nama-lengkap">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" />
+                </div>
+                <div class="alamat-email">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" />
+                </div>
+                <div class="Kategori">
+                    <label for="kategori">Kategori</label>
+                    <br>
+                    <div>
+                        <input type="radio" id="report" name="kategori" value="report" />
+                        <label for="report">Laporan</label><br />
+                        <input type="radio" id="feedback" name="kategori" value="feedback" />
+                        <label for="feedback">Masukkan</label>
+                    </div>
+                </div>
+                <div class="pesan">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div class="konfirmasi">
+                    <input 
                                 type="checkbox"
                                 id="verification"
                                 name="verification"
@@ -67,22 +53,10 @@
                                 required
                             />
                             <label for="verification">Konfirmasi Tindakan</label>
-                        </td>
-                        <span class="checkmark"></span>
-                    </tr>
-                    <tr align="center">
-                        <td colspan="2">
-                            <input type="submit" value="Kirim" />
-                        </td>
-                        <span class="checkmark"></span>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><hr /></td>
-                        <span class="checkmark"></span>
-                    </tr>
-                </table>
+                </div>
+                <input type="submit" value="Kirim" class="submit" style="color: white;"/>
             </form>
         </main>
-    </body>
     </div>
+</body>
 </html>

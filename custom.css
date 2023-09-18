@@ -12,8 +12,8 @@ body {
 }
 
 .container {
-    width: 1200px;
-    margin: 0 auto;
+    width: auto;
+    margin: 0px 40px 0px 40px;
 }
 
 .main-header {
@@ -47,117 +47,117 @@ aside {
 h1,
 h2,
 h3 {
-    color: #1098ad;
+color: #1098ad;
 }
 
 h1 {
-    font-size: 26px;
-    text-transform: uppercase;
-    font-style: italic;
+font-size: 26px;
+text-transform: uppercase; 
+font-style: italic;
 }
 
 h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
+font-size: 40px; 
+margin-bottom: 30px;
 }
 
 h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+font-size: 30px;
+margin-bottom: 20px; 
+margin-top: 40px;
 }
 
 h4 {
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 20px;
+font-size: 20px;
+text-transform: uppercase; 
+text-align: center;
+margin-bottom: 20px;
 }
 
 p {
-    font-size: 22px;
-    line-height: 1.5;
-    margin-bottom: 15px;
+font-size: 22px; 
+line-height: 1.5; 
+margin-bottom: 15px;
 }
 
 ul,
 ol {
-    margin-left: 50px;
-    margin-bottom: 20px;
+margin-left: 50px; 
+margin-bottom: 20px;
 }
 
 li {
-    font-size: 20px;
-    margin-bottom: 10px;
+font-size: 20px; 
+margin-bottom: 10px;
 }
 
 li:last-child {
-    margin-bottom: 0px;
+margin-bottom: 0px;
 }
 
 #author {
-    font-style: italic;
-    font-size: 18px;
+font-style: italic;
+font-size: 18px;
 }
 
 #copyright {
-    font-size: 16px;
+font-size: 16px;
 }
 
 .related-author {
-    font-size: 18px;
-    font-weight: bold;
+font-size: 18px; 
+font-weight: bold;
 }
 
 .related {
-    list-style: none;
+list-style: none;
 }
 
 .main-header {
-    background-color: #f7f7f7;
+background-color: #f7f7f7;
 }
 
 aside {
-    background-color: #f7f7f7;
-    border-top: 5px solid #1098ad;
-    border-bottom: 5px solid #1098ad;
+background-color: #f7f7f7;
+border-top: 5px solid #1098ad; 
+border-bottom: 5px solid #1098ad;
 }
 
 li:first-child {
-    font-weight: bold;
+font-weight: bold;
 }
 
 li:last-child {
-    font-style: italic;
+font-style: italic;
 }
 
 /* Styling links */
 a:link {
-    color: #1098ad;
-    text-decoration: none;
+color: #1098ad;
+text-decoration: none;
 }
 
 a:visited {
-    color: #1098ad;
+color: #1098ad;
 }
 
 a:hover {
-    color: orangered;
-    font-weight: bold;
-    text-decoration: underline dotted orangered;
+color: orangered;
+font-weight: bold;
+text-decoration: underline dotted orangered;
 }
 
 a:active {
-    background-color: gainsboro;
-    font-style: italic;
+background-color: gainsboro; 
+font-style: italic;
 }
 
 .post-img {
-    width: 100%;
-    height: auto;
+width: 100%;
+height: auto;
 }
 
-nav a:link {
+ nav a:link {
     margin: 10px 30px 0 0;
     display: inline-block;
 }
@@ -200,174 +200,212 @@ h1::first-letter {
     right: 0px;
 }
 
-/* TABLE */
+article header p {
+    font-style: italic;
+}
 
+
+
+
+
+/* BLOG SECTION */
 .table-blog {
-    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
-
-.table-blog th,
-td {
-    padding: 15px;
-    border: none;
-    border-bottom: 1px solid #ddd;
+  
+.table-blog td, .table-blog th {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
-
-th {
-    background-color: #1098ad;
-    color: white;
-}
-
-
-
-.table-blog tr:nth-child(odd) {
-    background-color: #ffffff;
-}
-
-.table-blog tr:nth-child(even) {
+  
+.table-blog tr:nth-child(even){
     background-color: #f2f2f2;
 }
-
+  
 .table-blog tr:hover {
+    background-color: #ddd;
+}
+  
+.table-blog th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
     background-color: #1098ad;
     color: white;
 }
 
-.table-blog .table-color-blue {
-    background-color: #1098ad;
-    color: white;
-}
 
-/* CONTACT */
 
-.table-formulir main {
+
+
+/* CONTACT SECTION */
+main {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.table-formulir input {
-    width: 100%;
-}
-
-.table-formulir input[type=text] {
-    width: 100%;
-    /* padding: 12px 20px; */
-    /* margin: 8px 0; */
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid lightgrey;
-}
-
-.table-formulir input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    /* margin: 8px 0; */
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid lightgrey;
-}
-
-.table-formulir textarea {
-    width: 100%;
-    padding: 12px 20px;
-    /* margin: 8px 0; */
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid lightgrey;
-}
-
-.table-formulir label {
-    display: block;
-}
-
-.table-formulir td {
-    border: none;
-}
-
-.radio-option {
+main .contact-us {
     display: flex;
-    align-items: first;
-    margin: 0px;
-    padding: 0%;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    background-color: #ffe7;
 }
-
-input[type=button],
-input[type=submit],
-input[type=reset] {
-    background-color: #1098ad;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-/* LOGIN */
-
-.table-login main {
+main .contact-us .nama-lengkap,
+main .contact-us .alamat-email,
+main .contact-us .pesan {
     display: flex;
-}
-
-.table-login input {
+    flex-direction: column;
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.table-login fieldset {
-    border: none;
-}
-
-.table-login input[type=text] {
+main .contact-us .Kategori,
+main .contact-us .konfirmasi {
     width: 100%;
-    /* padding: 12px 20px; */
-    /* margin: 8px 0; */
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid lightgrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
 }
 
-.table-login input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    /* margin: 8px 0; */
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid lightgrey;
+main .contact-us .Kategori div {
+    display: flex;
+    align-items: center;
 }
 
-.table-login input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    /* margin: 8px 0; */
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid lightgrey;
+main .contact-us .Kategori div label {
+    font-size: small;
+    margin-left: 5px;
+    margin-right: 25px;
 }
 
-.table-login textarea {
-    width: 100%;
-    padding: 12px 20px;
-    /* margin: 8px 0; */
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid lightgrey;
+main .contact-us .Kategori div input {
+    width: 20px;
+    height: 20px;
 }
 
-.table-login label {
-    display: block;
+main .contact-us .nama-lengkap input,
+main .contact-us .alamat-email input,
+main .contact-us .pesan textarea{
+    height: 40px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
 }
 
-.table-login td {
-    border: none;
+main .contact-us .pesan textarea{
+    height: 100px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
 }
 
-input[type=button],
-input[type=submit],
-input[type=reset] {
+main .contact-us .konfirmasi {
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .contact-us .konfirmasi label {
+    font-size: small;
+    margin-left: -5px;
+    margin-right: 10px;
+}
+
+main .contact-us .konfirmasi input {
+    width: 25px;
+    height: 25px;
+}
+
+main .contact-us .submit {
+    color: #ddd;
     background-color: #1098ad;
+    margin-top: 20px;
+    font-size: medium;
+    padding: 15px 30px 15px 30px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+
+
+
+/* CHALLENGES SECTION */
+article p strong{
+    color: #1098ad;
+}
+
+
+
+
+/* CHALLENGES SECTION */
+.container-login {
+    margin: 0px 50px 0px 50px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.container-login fieldset {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0px 30px 0px 30px;
     border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
+    width: 100%;
+}
+
+.container-login fieldset .title {
+    align-self: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1098ad;
+}
+
+.container-login fieldset form {
+    width: 100%;
+    margin-top: 30px;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-login fieldset form label {
+    font-size: medium;
+    align-self: flex-start;
+}
+
+.container-login fieldset form input {
+    height: 40px;
+    width: 100%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid black;
+}
+
+.container-login fieldset form button {
+    display: block; 
+    margin: 0 auto; 
+    color: #ddd;
+    background-color: #1098ad;
+    margin-top: 20px;
+    font-size: medium;
+    padding: 15px 30px 15px 30px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.container-login fieldset form select {
+    width: 100%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid black;
 }
